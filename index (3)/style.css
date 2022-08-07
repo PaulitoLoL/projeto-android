@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital@1&display=swap');
+
+
+:root{
+    --cor0: #c5ebd6;
+    --corg: #80f0b3d2;
+    --corn: #c7fddf;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #095028;
+    --cor6: #063b1d;
+    --cor7: #023d1c;
+    --cors: #04833b;
+
+    --font-padrao: arial, Helvetica, Verdana, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Tourney', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(206, 224, 180);
+    font-family: var(--font-padrao);
+ 
+}
+
+a.externo:after{
+    content: '\00A0\1F517';
+}
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--font-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.26);
+    font-weight: normal;
+    
+
+}
+
+header > p{
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.192);
+    margin-bottom: 20px;
+    
+}
+
+nav{
+    background-color: var(--cor6);
+    padding: 10px;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.274);
+}
+
+nav > a{
+    color: var(--corn);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+
+nav >a:hover{
+    background-color: var(--cor3);
+    color: var(--cor6);
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.video{
+    background-color: var(--cor6);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57.9%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+main h1{
+    color: var(--cor6);
+    font-family: var(--font-android);
+    font-size: 2em;
+    font-weight: bolder;
+    
+}
+
+main h2{
+    color: var(--cor7);
+    font-family: var(--font-android);
+    font-size: 1.8em;
+    background-image: linear-gradient(to right, var(--corg), transparent);
+    font-weight: bolder;
+}
+
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.7em;
+
+}
+
+main strong{
+    color: var(--cors);
+    font-weight: bold;
+
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor6);
+    background-color: #44da879c;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.301);
+}
+
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px ;
+}
+
+footer{
+    background-color: var(--cor6);
+    color: white;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer a{
+    color: #34db7f;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 2px;
+    
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #033017;
+    background-color: #4ec081;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+}
